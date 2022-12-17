@@ -1,0 +1,17 @@
+<template>
+    
+
+    <lightning-card title="musteriler">
+<ul>
+    <template iterator:it={customerList}>
+        <li key={it.value.id}>  <!-- ilk paranteze it.value de yazlblr -->
+        <h1>{it.value.name} </h1> 
+        <h1>{it.value.phone} </h1> 
+        <h1>{it.value.email} </h1> 
+        <img src={it.value.imgURL}/>
+    </li> 
+
+</template>
+</ul>
+    </lightning-card>
+</template>

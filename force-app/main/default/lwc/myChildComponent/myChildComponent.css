@@ -1,0 +1,13 @@
+h1{
+    color: blue;
+}
+lightning-card{
+    color: rgba(190, 18, 133, 0.781);
+}
+/*h2{
+    color: yellow;
+} 
+dinamik değil, hooks yaprsam parenttan  degeri degstrblrm*/
+h2{
+    color: var(--renk, yellow); /*--renk baska br sey de yazlblr,parenttan degstrlblrz,kullanblrz yol acar*/
+}

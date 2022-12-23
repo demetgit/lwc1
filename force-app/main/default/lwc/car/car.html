@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Car">
+        <h1>BMW</h1>
+        <c-car-engine motor-modeli="4.0 turbo"></c-car-engine> <!-- container i yani carEngine i  cagrdk ama hard code oldu -->  <!-- 5.js deki property motor modelini 3 den 4 e overide ettk -->
+<!-- A ornegn br yoneticiden input ile bir deger alıp bunu dinamk hale getrblrz -->
+   
+<lightning-input label="motor modeli" placeholder="motor modelini giriniz" onchange={motor}></lightning-input>
+<!-- C -->
+<c-car-engine motor-modeli={motorModeliDegeri}></c-car-engine>
+</lightning-card>
+</template>

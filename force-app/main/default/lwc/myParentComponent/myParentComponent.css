@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+p{
+    color: green;
+/*child a butun halnde stil atayablrz*/
+}
+c-my-child-component {
+    color: #d0ff00;
+    --renk: rgb(206, 7, 40);
+} /*asagıdaki calsmaz,nokta atısı degistiremeyz,child css atamak gerekr*/
+c-my-child-component h1{
+    color: blueviolet;
+   
+}
+

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="slot child name">
+        <h1>7.aile agaci</h1>
+        <h1>8. baba: Ali</h1>
+        <h1>9.Anne: Fatma</h1>
+        <h1>10. cocuk : <slot name="ayva"></slot> </h1> <!-- 2.2 veliyi sildm slot ekledm -->
+        <slot></slot> <!-- 1.1.slot ekledk sonra deploy -->
+        <slot name="muz"></slot>
+    </lightning-card>
+</template>

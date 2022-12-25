@@ -1,0 +1,17 @@
+<template>
+    <!-- 11- -->
+    <lightning-card title="Search Account">
+        <lightning-input type="text" onchange={handleInput}></lightning-input>
+        <!-- f)- lightning buton olusturalm -->
+        <lightning-button label="Get Account" onclick={handleGetAccount}></lightning-button>
+
+        <ul>
+            <template for:each={accounts} for:item="w">  <!-- g) datayi sil ,imperatively de yazilmiyor, class a git-->
+                <li key={w.id}>
+                    Name : {w.Name};
+                    Tel : {w.Phone}; <!-- deploy -->
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

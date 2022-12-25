@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="slotParent">
+        <h1>1.Parent Header</h1>
+        <c-slot-child >
+            <h1>5.Child Slot Header </h1>
+            <p>6.Child Slot Paragraph</p>
+        </c-slot-child>
+        
+        <p>4.Parent Paragraph</p>
+        <c-slot-child-named>
+            <span slot="elma"> DEMET</span> <!-- 1.gorunmezler, gorunmeleri icin child a slot ekleriz -->
+            <div slot="ayva">Busra</div> <!-- 2. elma,ayva,muz yazdk ama gorunmez ozel olarak cagrmmz lazm,child da -->
+            <div slot="muz">Sema</div>
+        </c-slot-child-named>
+    </lightning-card>
+</template>
